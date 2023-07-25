@@ -1,10 +1,5 @@
 /*
-  Theme Name: Stellar - Creative & Agency Responsive HTML5 Template
-  Theme URL: http://themewar.com/html/stellar
-  Author: ThemeWar
-  Author URI: http://themewar.com
-  Description: Stellar is a Premium One page creative responsive HTML5 template best suitable for Design agencies, freelancers, photographers, personal portfolios etc. The template comes with 3 Home Page designs with blog pages.
-  Version: 1.0
+Vanntechs Web Studio
 */
 
 /*=======================================================================
@@ -24,8 +19,8 @@
 11. Funfact Section
 12. Funfact 2
 13. Funfact 3
-14. Why Choose Stellar
-15. Why Choose Stellar2
+14. Why Choose Vanntechs
+15. Why Choose Vanntechs2
 16. Portfolio
 17. Portfolio 2
 18. Portfolio 3
@@ -38,7 +33,7 @@
 25. Info Section
 26. Skill Section
 27. Gallery
-28. Testimonia l
+28. Testimonial
 29. Testimonial 2
 30. Testimonial 3
 31. Latest Blog
@@ -126,10 +121,10 @@ body.menuOpened .fixedHeader{
     line-height: .8;
 }
 .logo a:hover{
-    color: #ffd667;
+    color: #fd892a;
 }
 .home2 .logo a:hover{
-    color: #b89840;
+    color: #fd892a;
 }
 .mainMenu{
     width: 100%;
@@ -991,7 +986,7 @@ body.menuOpened .sideMenuArea{
     letter-spacing: 2px;
 }
 /*=======================================================================
-// Why Choose Stellar
+// Why Choose Vanntechs
 =========================================================================*/
 .whychoose{
     background: url(../images/bg/16.jpg) no-repeat center center;
@@ -2679,7 +2674,7 @@ body.menuOpened .sideMenuArea{
 .subsNotice i, .consNotice i{
     background: #fff none repeat scroll 0 0;
     border-radius: 50%;
-    color: #b89840;
+    color: #fd892a;
     font-size: 60px;
     height: 109px;
     text-align: center;
@@ -2714,7 +2709,7 @@ body.menuOpened .sideMenuArea{
     font-weight: 400;
 }
 .subscribeForm2 button{
-    background: #b89841;
+    background: #fd892a;
     color: #FFF;
     font-weight: 700;
     letter-spacing: 2px;
@@ -2746,7 +2741,7 @@ body.menuOpened .sideMenuArea{
     font-weight: 400;
 }
 .subscribeForm3 button{
-    background: #b89841;
+    background: #fd892a;
     color: #FFF;
     font-weight: 700;
     letter-spacing: 2px;
@@ -2828,7 +2823,7 @@ body.menuOpened .sideMenuArea{
 button.submita{
     width: 192px;
     height: 50px;
-    background: #ffd667;
+    background: #fd892a;
     border-radius: 4px;
     color: #000;
     font-size: 14px;
@@ -2887,7 +2882,7 @@ button.submita:hover{
 // Contact Section 2
 =========================================================================*/
 .contactSection2{
-    background: url(../images/bg/contact2.png) no-repeat center top #FFF;
+    background: url(../images/bg/concat.png) no-repeat center top #FFF;
 }
 .contactSection2 .sectionTitle2{
     margin-bottom: 110px;
@@ -2917,7 +2912,7 @@ button.submita:hover{
     margin-right: 30px;
 }
 .conInfos2 p i{
-    color: #b89841;
+    color: #fd892a;
     margin-right: 11px;
 }
 .conforms2{
@@ -2929,7 +2924,7 @@ button.submita:hover{
     border-color: #CCC;
 }
 .conforms2 .submita{
-    background: #b89841;
+    background: #fd892a;
     font-weight: 700;
     letter-spacing: 2px;
     color: #FFF;
@@ -2947,13 +2942,13 @@ button.submita:hover{
     background: #FFF;
 }
 .contactSection3 .sectionTitle small{
-    color: #b89840;
+    color: #fd892a;
 }
 .sconInfo h5 i{
-    color: #b89840;
+    color: #fd892a;
 }
 .conforms3 .submita{
-    background: #b89841;
+    background: #fd892a;
     font-weight: 300;
     letter-spacing: 2px;
     color: #FFF;
@@ -3011,8 +3006,8 @@ button.submita:hover{
     background: #F26798;
 }
 .copyRight{
-    color: #999;
-    font-size: 12px;
+    color: #464646;
+    font-size: 13px;
     text-transform: uppercase;
     line-height: .8;
     font-weight: 300;
@@ -3030,7 +3025,7 @@ button.submita:hover{
 =========================================================================*/
 .footer2{
     border-top: 1px solid #e0e0e0;
-    background: #FFF;
+    background: url(../images/bg/concat2.png) no-repeat center top #FFF;
 }
 
 /*=======================================================================
@@ -3085,7 +3080,7 @@ button.submita:hover{
     padding: 90px 0;
 }
 .comonPagTitle{
-    color: #b89841;
+    color: #fd892a;
     display: block;
     font-size: 16px;
     line-height: .8;
