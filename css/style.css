@@ -51,11 +51,37 @@ Vanntechs Web Studio
 43. Footer 3
 44. Page Header
 
+
+
+
 ==========================================================================*/
 
 /*=======================================================================
 // Page Area
 =========================================================================*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+@media (hover: hover) and (pointer: fine) {
+    #cursor {
+        z-index: 99;
+        position: fixed;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        will-change: transform;
+    }
+
+    #cursor .cursor--inner {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        border: solid 1px #fd892a;
+    }
+}
+
 .animat { 
     -webkit-transition: all 0.5s ease; 
     -moz-transition: all 0.5s ease; 
@@ -97,10 +123,8 @@ body.menuOpened .fixedHeader{
     left: -300px;
 }
 .logo{
-    width: 58%;
     text-align: left;
     padding-top: 5px;
-    padding-bottom: 0;
     transition: all ease 500ms;
     -moz-transition: all ease 500ms;
     -webkit-transition: all ease 500ms;
@@ -111,6 +135,12 @@ body.menuOpened .fixedHeader{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.logo-text {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 .logo a{
     font-family: Roboto;
     font-size: 22px;
@@ -119,6 +149,7 @@ body.menuOpened .fixedHeader{
     letter-spacing: 8px;
     text-transform: uppercase;
     line-height: .8;
+    margin-top: 20px;
 }
 .logo a:hover{
     color: #fd892a;
@@ -278,10 +309,21 @@ body.menuOpened .fixedHeader{
     opacity: 1;
     visibility: visible;
 }
+
+.logoimg {
+    position: absolute;
+    width: 35px;
+    height: auto;
+    left: -35px;
+    top: -30px;
+}
+
 .hovImg{
     position: absolute;
-    left: 0;
-    top: 1px;
+    width: 35px;
+    height: auto;
+    left: -35px;
+    top: -30px;
     opacity: 0;
     visibility: hidden;
     transition: all ease 500ms;
@@ -371,10 +413,10 @@ body.menuOpened .sideMenuArea{
 }
 .closeBtn {
     color: #fff;
-    font-size: 30px;
+    font-size: 60px;
     position: absolute;
     right: 30px;
-    top: 90px;
+    top: 120px;
 }
 .closeBtn:hover, .closeBtn:focus{
     color: #fd892a;
@@ -427,7 +469,7 @@ body.menuOpened .sideMenuArea{
     width: 100%;
     height: auto;
     position: relative;
-    background: url(../images/slide/3.jpg) no-repeat top center;
+    background: url(../images/slide/3.webp) no-repeat top center;
 }
 .banners:after{
     content: "";
@@ -529,7 +571,7 @@ body.menuOpened .sideMenuArea{
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: .8;
+    line-height: 1.5;
     margin: 0 0 8px;
     color: #FFF;
     letter-spacing: 15px;
@@ -538,7 +580,7 @@ body.menuOpened .sideMenuArea{
     font-family: Georgia;
     font-size: 130px;
     color: #fd892a;
-    line-height: 110px;
+    line-height: 1.5;
     margin: 0px;
     text-transform: capitalize;
 }
@@ -564,12 +606,12 @@ body.menuOpened .sideMenuArea{
     position: absolute;
     right: 20px;
     top: 0;
-    width: 11px;
+    width: 15px;
     z-index: 2;
 }
 .mainSlider .tp-bullets.simplebullets.round .bullet{
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border: none;
     background: none;
     border-radius: 50%;
@@ -634,7 +676,7 @@ body.menuOpened .sideMenuArea{
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 300;
-    line-height: .8;
+    line-height: 1.5;
     margin: 0;
     color: #FFF;
     letter-spacing: 22px;
@@ -714,6 +756,11 @@ body.menuOpened .sideMenuArea{
     margin: 0px;
     letter-spacing: 0;
 }
+
+.clutch-widget {
+    margin-bottom: 20px;
+}
+
 .wel2Row{
     margin-top: 80px;
 }
@@ -989,7 +1036,7 @@ body.menuOpened .sideMenuArea{
 // Why Choose Vanntechs
 =========================================================================*/
 .whychoose{
-    background: url(../images/bg/16.jpg) no-repeat center center;
+    background: url(../images/bg/16.webp) no-repeat center center;
     padding: 100px 0 55px;
 }
 .overlay:after{
@@ -1036,7 +1083,7 @@ body.menuOpened .sideMenuArea{
 .vanntechsTab li{
     display: inline-block;
     list-style: none;
-    line-height: .8;
+    line-height: 1.5;
     width: 33%;
     text-align: center;
 }
@@ -1306,16 +1353,16 @@ body.menuOpened .sideMenuArea{
     margin-bottom: 32px;
 }
 .folioNav2{
-    line-height: .8;
+    line-height: 1.5;
     margin-bottom: 72px;
 }
 .folioNav2 ul{
-    line-height: .8;
+    line-height: 1.5;
 }
 .folioNav2 ul li{
     font-weight: 700;
     letter-spacing: 2px;
-    line-height: .8;   
+    line-height: 1.5;
 }
 .folioNav2 ul li:after{
     background: #b89840;
@@ -1387,7 +1434,7 @@ body.menuOpened .sideMenuArea{
 }
 .fI2content h2{
     font-size: 54px;
-    line-height: .8;
+    line-height: 1.5;
     color: #FFF;
     text-transform: capitalize;
     margin: 0px;
@@ -1402,7 +1449,7 @@ body.menuOpened .sideMenuArea{
 .fI2Cats{
     width: 100%;
     text-align: center;
-    line-height: .8;
+    line-height: 1.5;
     color: #b89840;
     font-size: 12px;
     text-transform: uppercase;
@@ -1503,7 +1550,7 @@ body.menuOpened .sideMenuArea{
 }
 .fI3content h2{
     font-size: 24px;
-    line-height: .8;
+    line-height: 1.5;
     color: #FFF;
     text-transform: uppercase;
     margin: 0px;
@@ -1519,7 +1566,7 @@ body.menuOpened .sideMenuArea{
 .fI3Cats{
     width: 100%;
     text-align: center;
-    line-height: .8;
+    line-height: 1.5;
     color: #b89840;
     font-size: 12px;
     text-transform: uppercase;
@@ -1554,7 +1601,7 @@ body.menuOpened .sideMenuArea{
 .callToActionContent2 h5{
     display: block;
     font-size: 16px;
-    line-height: .8;
+    line-height: 1.5;
     letter-spacing: 8px;
     margin-bottom: 30px;
     color: #fd892a;
@@ -1564,13 +1611,13 @@ body.menuOpened .sideMenuArea{
 }
 .callToActionContent2 h1{
     font-size: 86px;
-    line-height: .8;
+    line-height: 1.5;
     color: #FFF;
     margin: 0 0 23px;
     font-family: Georgia;
 }
 .callToActionContent2 h3{
-    line-height: .8;
+    line-height: 1.5;
     color: #FFF;
     font-size: 46px;
     margin: 0 0 52px;
@@ -1620,7 +1667,7 @@ body.menuOpened .sideMenuArea{
 .callToActionContent h5{
     display: block;
     font-size: 16px;
-    line-height: .8;
+    line-height: 1.5;
     letter-spacing: 8px;
     margin-bottom: 30px;
     color: #ffd667;
@@ -1630,7 +1677,7 @@ body.menuOpened .sideMenuArea{
 }
 .callToActionContent h3{
     font-weight: 100;
-    line-height: .8;
+    line-height: 1.5;
     color: #FFF;
     font-size: 26px;
     margin: 0 0 61px;
@@ -1645,7 +1692,7 @@ body.menuOpened .sideMenuArea{
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
-    line-height: .8;
+    line-height: 1.5;
     color: #000;
     letter-spacing: 2px;
     border-radius: 3px;
@@ -1685,7 +1732,7 @@ body.menuOpened .sideMenuArea{
 }
 .callToActionContent3 h1{
     font-size: 46px;
-    line-height: .8;
+    line-height: 1.5;
     color: #fff;
     margin: 0 0 75px;
     letter-spacing: 12px;
@@ -1756,7 +1803,7 @@ body.menuOpened .sideMenuArea{
     bottom: 0;
     margin: 0 auto;
     text-align: center;
-    line-height: .8;
+    line-height: 1.5;
     padding: 32px 0;
     opacity: 0;
     visibility: hidden;
@@ -1778,7 +1825,7 @@ body.menuOpened .sideMenuArea{
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 7px;
-    line-height: .8;
+    line-height: 1.5;
     margin-bottom: 15px;
 }
 .teamDetails a:hover{
@@ -1817,7 +1864,7 @@ body.menuOpened .sideMenuArea{
 .thead{
     width: 100%;
     text-align: left;
-    line-height: .8;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 .thead a{
@@ -1825,7 +1872,7 @@ body.menuOpened .sideMenuArea{
     color: #2c3da7;
     font-weight: 600;
     text-transform: capitalize;
-    line-height: .8;
+    line-height: 1.5;
 }
 .thead span{
     font-size: 18px;
@@ -2021,7 +2068,7 @@ body.menuOpened .sideMenuArea{
     font-size: 14px;
     left: -12px;
     letter-spacing: 0;
-    line-height: 0.8;
+    line-height: 1.5;
     margin: 0;
     position: absolute;
 }
@@ -2046,7 +2093,7 @@ body.menuOpened .sideMenuArea{
     float: left;
     font-size: 16px;
     text-transform: uppercase;
-    line-height: .8;
+    line-height: 1.5;
     letter-spacing: .6px;
     text-align: right;
 }
@@ -2138,7 +2185,7 @@ body.menuOpened .sideMenuArea{
     text-transform: uppercase;
     margin: 0 0 20px;
     letter-spacing: 4px;
-    line-height: .8;
+    line-height: 1.5;
 }
 .testiItem h6{
     font-size: 12px;
@@ -2270,7 +2317,7 @@ body.menuOpened .sideMenuArea{
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: .8;
+    line-height: 1.5;
     text-align: left;
 }
 #testimonialSlider2 .carousel-indicators li h6{
@@ -2358,7 +2405,7 @@ body.menuOpened .sideMenuArea{
 .sbCats{
     color: #2c3da7;
     padding-top: 24px;
-    line-height: .8;
+    line-height: 1.5;
     padding-bottom: 26px;
 }
 .sbCats a{
@@ -2366,7 +2413,7 @@ body.menuOpened .sideMenuArea{
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
-    line-height: .8;
+    line-height: 1.5;
     display: inline-block;
     letter-spacing: 1px;
 }
@@ -2387,12 +2434,12 @@ body.menuOpened .sideMenuArea{
 .sbFooter{
     width: 100%;
     position: relative;
-    line-height: .8;
+    line-height: 1.5;
 }
 .sbFooter a{
     color: #999999;
     font-size: 13px;
-    line-height: 0.8;
+    line-height: 1.5;
     padding-left: 23px;
     position: relative;
 }
@@ -2403,7 +2450,7 @@ body.menuOpened .sideMenuArea{
     bottom: -2px;
     font-size: 20px;
     left: 0;
-    line-height: 0.8;
+    line-height: 1.5;
     position: absolute;
 }
 .sbFooter a.sbflast i{
@@ -2460,7 +2507,7 @@ body.menuOpened .sideMenuArea{
     color: #b89841;
     font-size: 13px;
     text-transform: uppercase;
-    line-height: .8;
+    line-height: 1.5;
     display: inline-block;
     font-weight: 700;
     letter-spacing: 0px;
@@ -2469,7 +2516,7 @@ body.menuOpened .sideMenuArea{
     color: #b89841;
     font-size: 13px;
     text-transform: uppercase;
-    line-height: .8;
+    line-height: 1.5;
     display: inline-block;
     font-weight: 700;
     letter-spacing: 0px;
@@ -2521,7 +2568,7 @@ body.menuOpened .sideMenuArea{
     color: #b89841;
     font-size: 13px;
     text-transform: uppercase;
-    line-height: .8;
+    line-height: 1.5;
     display: inline-block;
     font-weight: 700;
     letter-spacing: 0px;
@@ -2530,7 +2577,7 @@ body.menuOpened .sideMenuArea{
     color: #b89841;
     font-size: 13px;
     text-transform: uppercase;
-    line-height: .8;
+    line-height: 1.5;
     display: inline-block;
     font-weight: 700;
     letter-spacing: 0px;
@@ -2548,13 +2595,14 @@ body.menuOpened .sideMenuArea{
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
     padding: 33px 0 28px;
-    background: #FAFAFA;
+    background: #FFF;
 }
 .clients{
     width: 20%;
     position: relative;
     text-align: center;
     float: left;
+    margin-top: 40px;
 }
 .clients img{
     width: auto;
@@ -2610,7 +2658,7 @@ body.menuOpened .sideMenuArea{
     padding-left: 15px;
     font-size: 14px;
     color: #000;
-    line-height: .8;
+    line-height: 1.5;
     font-weight: 400;
     letter-spacing: 3px;
     margin-right: 8px;
@@ -2644,7 +2692,7 @@ body.menuOpened .sideMenuArea{
     text-transform: uppercase;
     color: #999;
     margin: 20px 0 0;
-    line-height: .8;
+    line-height: 1.5;
     letter-spacing: 2px;
     text-align: left;
 }
@@ -2761,11 +2809,22 @@ body.menuOpened .sideMenuArea{
 /*=======================================================================
 // Contact Section 
 =========================================================================*/
+.grecaptcha-badge {
+    width: 70px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    left: 4px !important;
+}
+
+.grecaptcha-badge:hover {
+    width: 256px !important;
+}
+
 .contactSection{
     width: 100%;
     position: relative;
     min-height: 600px;
-    background: #fafafa url("../images/bg/concat.png") no-repeat scroll center 154px;
+    background: #fafafa url(../images/bg/concat.webp) no-repeat scroll center 154px;
     padding-top: 250px;
     padding-bottom: 140px;
 }
@@ -2857,7 +2916,7 @@ button.submita:hover{
     position: relative;
     padding-left: 33px;
     letter-spacing: 2px;
-    line-height: .8;
+    line-height: 1.5;
     margin: 0px 0px 29px;
 }
 .sconInfo h5 i{
@@ -2870,7 +2929,7 @@ button.submita:hover{
 }
 .sconInfo p{
     padding-left: 33px;
-    line-height: .8;
+    line-height: 1.5;
     font-size: 14px;
     color: #000;
     margin: 0px;
@@ -2878,11 +2937,41 @@ button.submita:hover{
     letter-spacing: 2px;
 }
 
+
+.form-control {
+    border-radius: 0px;
+    border: 1px solid #333;
+}
+.form-control-lg {
+     height:calc(3.5rem + 2px);
+     padding:1rem 0.75rem;
+     font-size:1rem;
+ }
+.placeholder {
+     font-size:1rem
+ }
+.has-error {
+     border:1px solid red;
+ }
+.no-error {
+     border:1px solid green;
+ }
+
+
+.error {
+    color:red;
+}
+
+.success {
+    color: green
+}
+
+
 /*=======================================================================
 // Contact Section 2
 =========================================================================*/
 .contactSection2{
-    background: url(../images/bg/concat.png) no-repeat center top #FFF;
+    background: url(../images/bg/concat.webp) no-repeat center top #FFF;
 }
 .contactSection2 .sectionTitle2{
     margin-bottom: 110px;
@@ -2898,7 +2987,7 @@ button.submita:hover{
     font-family: Georgia;
     font-size: 20px;
     color: #000;
-    line-height: .8;
+    line-height: 1.5;
     letter-spacing: 0px;
 }
 .conInfos2 p.pMid{
@@ -3009,7 +3098,7 @@ button.submita:hover{
     color: #464646;
     font-size: 13px;
     text-transform: uppercase;
-    line-height: .8;
+    line-height: 1.5;
     font-weight: 300;
     letter-spacing: 1.68px;
     padding-top: 43px;
@@ -3025,7 +3114,7 @@ button.submita:hover{
 =========================================================================*/
 .footer2{
     border-top: 1px solid #e0e0e0;
-    background: url(../images/bg/concat2.png) no-repeat center top #FFF;
+    background: url(../images/bg/concat2.webp) no-repeat center top #FFF;
 }
 
 /*=======================================================================
@@ -3068,7 +3157,7 @@ button.submita:hover{
     font-size: 40px;
     font-weight: 300;
     color: #FFF;
-    line-height: .8;
+    line-height: 1.5;
     margin: 0px;
     letter-spacing: 20px;
     text-transform: uppercase;
@@ -3083,7 +3172,7 @@ button.submita:hover{
     color: #fd892a;
     display: block;
     font-size: 16px;
-    line-height: .8;
+    line-height: 1.5;
     letter-spacing: 8px;
     text-transform: uppercase;
     font-weight: 300;
@@ -3137,14 +3226,14 @@ button.submita:hover{
     text-align: center;
     position: relative;
     margin-bottom: 60px;
-    line-height: .8;
+    line-height: 1.5;
 }
 .featuredContent .cats a{
     color: #b89840;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
-    line-height: .8;
+    line-height: 1.5;
     display: inline-block;
 }
 .featuredContent .cats a:hover{
@@ -3156,7 +3245,7 @@ button.submita:hover{
 .featuredContent .sbFooter a{
     color: #999999;
     font-size: 13px;
-    line-height: 0.8;
+    line-height: 1.5;
     padding-left: 24px;
     position: relative;
 }
@@ -3167,7 +3256,7 @@ button.submita:hover{
     bottom: -2px;
     font-size: 20px;
     left: 0;
-    line-height: 0.8;
+    line-height: 1.5;
     position: absolute;
     color: #999;
 }
@@ -3208,7 +3297,7 @@ button.submita:hover{
     font-weight: 600;
     color: #FFF;
     display: inline-block;
-    line-height: .8;
+    line-height: 1.5;
 }
 .bloglistBG{
     position: absolute;
@@ -4189,7 +4278,7 @@ button.submita:hover{
 #backToTop{
     position: fixed;
     right: 50px;
-    bottom: 40px;
+    bottom: 120px;
     background: #000 none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;

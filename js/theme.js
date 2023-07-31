@@ -325,6 +325,16 @@
             tt = true;
         }
     });
+
+    $(document).on('click', function(event) {
+        var menuArea = $(".menuButtons");
+        // Check if the clicked element is not part of the menu area
+        if (!menuArea.is(event.target) && menuArea.has(event.target).length === 0) {
+            $(".menuButtons a").removeClass('active').fadeIn('fast');
+            $('body').removeClass('menuOpened');
+            tt = true;
+        }
+    });
     
     $(".menuButtons2").on('click', function(e){
         e.preventDefault();

@@ -9,6 +9,7 @@
 
 @media (min-width: 1440px)
 {
+
     .banners{
         background-position: center center;
         background-size: cover;
@@ -70,6 +71,12 @@
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
+
+    .mainMenu ul li a{
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
     .features {
         clear: both;
         display: table;
@@ -212,6 +219,13 @@
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
+
+
+    .notfoundparagraph {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     /* Menu */
     .mainMenu ul li {
         padding-right: 20px;
@@ -219,7 +233,14 @@
     .mainMenu ul li ul {
         width: 190px;
     }
+
+    .mainMenu ul li a{
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
     /* Slider */
+
     .slid2s h1 {
         font-size: 100px;
         line-height: 1;
@@ -230,6 +251,14 @@
         position: relative;
         width: 100%;
         margin-bottom: 60px;
+    }
+    .welP{
+        margin-top: 25px;
+    }
+    .images-introduction {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .funfacts2 .sectionTitle2 {
         font-size: 40px;
@@ -394,14 +423,26 @@
     }
 }
 @media (min-width: 481px) and (max-width: 767px){
+
+
+
+    .vanntechscontactimage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+    }
     /******* Header ********/
     .slid2s h2{
         letter-spacing: 5px;
         font-size: 25px;
+        margin-right: 25px;
     }
     .slid2s h1{
         font-size: 70px;
-        margin-top: 30px;
+        margin-top: 40px;
+        margin-right: 25px;
     }
     .mainMenu ul {
         position: absolute;
@@ -484,6 +525,14 @@
     .sectionTitle2{
         font-size: 30px;
         line-height: 1.2;
+    }
+    .welP{
+        margin-top: 25px;
+    }
+    .images-introduction {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .halfImg{
         position: relative;
@@ -749,6 +798,7 @@
     .bannerDetails h1{
         font-size: 50px;
         line-height: 60px;
+        margin-top: 40px;
     }
     .bannerDetails{
         padding-top: 160px;
@@ -896,7 +946,7 @@
         text-align: center;
     }
     .closeBtn{
-        top: 42px;
+        top: 120px;
     }
     .sideMenuArea .mainMenu > ul > li.has-child{
         padding-bottom: 20px;
@@ -944,7 +994,21 @@
 }
 @media (min-width: 320px) and (max-width: 480px)
 {
+
+    .vanntechsTab li {
+        width: 100%;
+    }
+
+    .vanntechsTab li a {
+        margin-bottom: 20px;
+    }
     /******* Header ********/
+
+    .vanntechscontactimage {
+        width: 90%;
+        height: auto;
+    }
+
     .mainMenu ul {
         position: absolute;
         width: 100%;
@@ -956,6 +1020,7 @@
         -webkit-transition: none;
         -ms-transition: none;
         -o-transition: none;
+        -display: none;
     }
     .mainMenu > ul{
         display: none;
@@ -1012,9 +1077,12 @@
     .slid2s h2{
         letter-spacing: 5px;
         font-size: 20px;
+        margin-right: 25px;
     }
     .slid2s h1{
         font-size: 50px;
+        margin-top: 40px;
+        margin-right: 25px;
     }
 
     .sectionTitle2 small{
@@ -1293,6 +1361,8 @@
     .bannerDetails h1{
         font-size: 50px;
         line-height: 50px;
+        margin-top: 40px;
+        margin-right: 10px;
     }
     .bannerDetails{
         padding-top: 160px;
@@ -1303,6 +1373,19 @@
     }
     .banners{
         height: 400px;
+    }
+
+    .welP{
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .images-introduction {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
     }
     .welcomeSection::before{
         top: -190px;
@@ -1439,7 +1522,7 @@
         text-align: center;
     }
     .closeBtn{
-        top: 42px;
+        top: 120px;
     }
     .sideMenuArea .mainMenu > ul > li.has-child{
         padding-bottom: 20px;
