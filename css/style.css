@@ -469,7 +469,7 @@ body.menuOpened .sideMenuArea{
     width: 100%;
     height: auto;
     position: relative;
-    background: url(../images/slide/3.webp) no-repeat top center;
+    background: url(vanntechs-web-studio-background-2.webp) no-repeat top center;
 }
 .banners:after{
     content: "";
@@ -709,7 +709,7 @@ body.menuOpened .sideMenuArea{
     position: relative;
     margin: 0;
     padding-bottom: 405px;
-    background: rgba(0, 0, 0, 0) url("../images/bg/stellar.png") no-repeat scroll -5px bottom;
+    background: rgba(0, 0, 0, 0) url("../images/bg/welcome.png") no-repeat scroll -5px bottom;
 }
 .welcomeSection:before{
     background: rgba(0, 0, 0, 0) url("../images/bg/welcome.png") no-repeat scroll center top;
@@ -4277,7 +4277,7 @@ button.submita:hover{
 
 #backToTop{
     position: fixed;
-    right: 50px;
+    right: 20px;
     bottom: 120px;
     background: #000 none repeat scroll 0 0;
     border-radius: 50%;
