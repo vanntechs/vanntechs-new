@@ -790,6 +790,15 @@ body.menuOpened .sideMenuArea{
 /*=======================================================================
 // Features Section
 =========================================================================*/
+
+.par1 {
+    height: 270px;
+}
+
+.par2 {
+    height: 400px;
+}
+
 .featuresSection{
     width: 100%;
     position: relative;
@@ -823,7 +832,8 @@ body.menuOpened .sideMenuArea{
     line-height: 28px;
     letter-spacing: .6px;
     color: #757575;
-    margin-bottom: 0px;
+    margin-bottom: 0;
+    font-family: Helvetica;
 }
 
 
