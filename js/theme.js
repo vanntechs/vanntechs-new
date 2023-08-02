@@ -335,7 +335,7 @@
             tt = true;
         }
     });
-    
+
     $(".menuButtons2").on('click', function(e){
         e.preventDefault();
         var hh = $(".header").height();
@@ -344,14 +344,14 @@
         $(this).toggleClass('active');
         $('body').toggleClass('bodyoverflos');
     });
-    
+
     $(".closeBtn").on('click', function(e){
         e.preventDefault();
         $(".menuButtons a").removeClass('active').fadeIn('fast');
             $('body').removeClass('menuOpened');
         tt = true;
     });
-    
+
 
     //========================
     // Back To Top
