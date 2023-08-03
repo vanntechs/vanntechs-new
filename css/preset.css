@@ -110,16 +110,16 @@ a:focus{
     color: #fd892a !important;
 }
 p{
-    font-size: 16px;
-    line-height: 28px;
-    color: #757575;
-    letter-spacing: .6px;
+    font-size: 20px;
+    line-height: 2;
+    color: #171717;
+    letter-spacing: .8px;
     font-weight: 300;
 }
 .comonSection{
     width: 100%;
     position: relative;
-    padding: 100px 0;
+    padding: 0;
 }
 .sectionTitle{
     font-weight: 300;
@@ -167,10 +167,21 @@ p{
 }
 .sectionTitle2{
     font-size: 46px;
-    margin: 0 0 58px;
-    font-family: Georgia;
+    font-weight: 300;
+    margin: 100px 0 58px;
+    font-family: Roboto;
     line-height: 1.5;
 }
+
+.sectionTitle3{
+    font-size: 26px;
+    font-weight: 300;
+    margin: 50px 0 0;
+    font-family: Roboto;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
 .sectionTitle2 small{
     font-size: 16px;
     text-transform: uppercase;
@@ -184,7 +195,7 @@ p{
 }
 .subTitle{
     font-size: 26px;
-    font-family: Georgia;
+    font-family: Roboto;
     color: #336eab;
     line-height: 35px;
     margin-bottom: 40px;

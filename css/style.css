@@ -726,6 +726,26 @@ body.menuOpened .sideMenuArea{
     width: 100%;
     z-index: 3;
 }
+
+.about-vincent {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.about-vanessa {
+    padding-bottom: 100px;
+}
+
+.about-vincent-bg {
+    background: url("../images/slide/vanntechs-web-studio-background-4.webp") no-repeat center top #0000;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.image-introduction {
+    width: 100%;
+}
+
 .welcomText{
     width: 100%;
     position: relative;
@@ -752,9 +772,7 @@ body.menuOpened .sideMenuArea{
 /*=======================================================================
 // Welcome 2
 =========================================================================*/
-.welcome2{
-    padding-top: 130px;
-}
+
 .welP{
     font-size: 18px;
     line-height: 36px;
@@ -838,7 +856,7 @@ body.menuOpened .sideMenuArea{
     letter-spacing: .6px;
     color: #757575;
     margin-bottom: 0;
-    font-family: Helvetica;
+    font-family: Roboto;
 }
 
 
@@ -847,7 +865,7 @@ body.menuOpened .sideMenuArea{
 =========================================================================*/
 .features{
     background: #fafafa;
-    padding: 115px 0 120px;
+    padding: 0 0 120px;
 }
 .halfImg{
     position: absolute;
@@ -1004,11 +1022,12 @@ body.menuOpened .sideMenuArea{
     color: #000;
 }
 .counters2 h2{
-    font-family: Georgia;
+    font-family: Roboto;
     color: #fd892a;
-    font-size: 46px;
+    font-size: 24px;
     margin: 4px 0 23px;
     line-height: 50px;
+    text-transform: uppercase;
 }
 .counters2 h4{
     font-weight: 700;
@@ -1052,7 +1071,7 @@ body.menuOpened .sideMenuArea{
 =========================================================================*/
 .whychoose{
     background: url(../images/bg/16.webp) no-repeat center center;
-    padding: 100px 0 55px;
+    padding: 0 0 55px;
 }
 .overlay:after{
     width: 100%;
@@ -1077,10 +1096,11 @@ body.menuOpened .sideMenuArea{
     color: #fff;
     line-height: 1.5;
     margin: 13px 0 30px;
-    font-family: Georgia;
+    font-family: Roboto;
+    font-weight: 300;
 }
 .itemContent p{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 36px;
     letter-spacing: 0px;
     color: #999;
@@ -1103,7 +1123,7 @@ body.menuOpened .sideMenuArea{
     text-align: center;
 }
 .vanntechsTab li a{
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #999;
     letter-spacing: .2px;
@@ -1364,6 +1384,10 @@ body.menuOpened .sideMenuArea{
 /*=======================================================================
 // Portfolio 2
 =========================================================================*/
+
+.portfolios2 {
+    margin-bottom: 100px;
+}
 .portfolios2 .sectionTitle2{
     margin-bottom: 32px;
 }
@@ -1612,6 +1636,8 @@ body.menuOpened .sideMenuArea{
 =========================================================================*/
 .callToAction2{
     background: #232221;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .callToActionContent2 h5{
     display: block;
@@ -2270,6 +2296,7 @@ body.menuOpened .sideMenuArea{
 =========================================================================*/
 .testimonial2{
     background: #fafafa;
+    padding-bottom: 100px;
 }
 .testiItem2 p{
     font-family: Georgia;
@@ -2985,6 +3012,7 @@ button.submita:hover{
 =========================================================================*/
 .contactSection2{
     background: url(../images/bg/concat.webp) no-repeat center top #FFF;
+    margin-bottom: 100px;
 }
 .contactSection2 .sectionTitle2{
     margin-bottom: 110px;
