@@ -863,6 +863,14 @@ body.menuOpened .sideMenuArea{
 /*=======================================================================
 // Features 2
 =========================================================================*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
 .features{
     background: #fafafa;
     padding: 0 0 120px;
