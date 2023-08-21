@@ -1,0 +1,109 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="page_header overlays" style="background: url(images/slide/vanntechs-web-studio-background-1.webp) no-repeat center center" data-parallax="scroll">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page_header_item">
+                    <h2>Our Blog</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="comonPageSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8 text-center">
+                <h2 class="comonPagTitle">What's new?</h2>
+                <div class="row">
+
+                    <ul>
+                    {% for post in site.posts %}
+                        <li>
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+                        <div class="bloglist text-center">
+                            <div class="listHeader">
+                                <h1><a href="{{ post.url }}"> {{ post.title }}</a></h1>
+                            </div>
+                            <div class="sbMeta">
+                                <div class="loader"></div>
+                                <div class="sbCats">{{ post.category }}</div>
+                                <div class="sbAuth">
+                                    <img src="images/blog/1.png" alt=""/>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="sbFooter">
+                                <a href="post.html" class="pull-left"><i class="esen-Calendar"></i>{{ post.datePublished}}</a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                        </li>
+                    {% endfor %}
+                    </ul>
+
+                    <div class="col-lg-12 col-sm-6 text-center loadMOrePosts wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+                        <a href="blog.html" class="learnMoreButton3">View more posts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="sidebar">
+                    <aside class="widget">
+                        <h3 class="widgetTitle">
+                            Search
+                        </h3>
+                        <form method="post" action="#" class="search_form">
+                            <input type="text" name="s" class="search_field" placeholder="ENTER KEYWORD"/>
+                        </form>
+                    </aside>
+                    <aside class="widget">
+                        <h3 class="widgetTitle">Recent Post</h3>
+                        <div class="singleRecent">
+                            <img src="images/blog/rb1.jpg" alt=""/>
+                            <span>31 May, 2015</span>
+                            <a href="#">
+                                Create your next web site with Unity.
+                            </a>
+                        </div>
+                        <div class="singleRecent">
+                            <img src="images/blog/rb2.jpg" alt=""/>
+                            <span>31 May, 2015</span>
+                            <a href="#">
+                                Truly unique hundreds of elements.
+                            </a>
+                        </div>
+                        <div class="singleRecent lastsrb">
+                            <img src="images/blog/rb3.jpg" alt=""/>
+                            <span>31 May, 2015</span>
+                            <a href="#">
+                                Easily create unlimited amount of custom.
+                            </a>
+                        </div>
+                    </aside>
+                    <aside class="widget noMarginBottom">
+                        <h3 class="widgetTitle">Tags</h3>
+                        <div class="tabclouds">
+                            <a href="#">Web Design</a>
+                            <a href="#">Development</a>
+                            <a href="#">CSS</a>
+                            <a href="#">Studio</a>
+                            <a href="#">Award</a>
+                            <a href="#">Mobile</a>
+                            <a href="#">IOS</a>
+                            <a href="#">IOS</a>
+                            <a href="#">UI / UX</a>
+                            <a href="#">Portfolio</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
