@@ -1013,6 +1013,9 @@
         </div>
     </section>
 
+    <div id="fb-root"></div>
+
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     <footer class="footer footer2" id="footer">
         <div class="container">
@@ -1089,6 +1092,32 @@
 </script>
 <!-- clutch review -->
 <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+
+
+<!-- facebook plugin -->
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "109423467386917");
+    chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v17.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 </body>
 </html>
