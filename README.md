@@ -1,6 +1,6 @@
 # Vanntechs website
 
-This project is to write a static website for Vanntechs - a small web development company in Montreal, Quebec, that supports other small businesses with their websites.
+This project is to write a static website for Vanntechs - a small web development company in Calgary, Alberta, that supports other small businesses with their websites.
 
 How to contribute
 Clone this repo to your local machine.
